@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--*styles-->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--*fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet" />
+    <!--font-family: 'Open Sans', sans-serif;-->
+
+    <title>FCC Survey Form</title>
+  </head>
+  <body>
+    <header class="head">
+      <h1 id="title" class="head__title">Playstation survey form</h1>
+      <p id="description" class="head__description">
+        Complete the next survey in order to participate for a playstation 5 console
+      </p>
+    </header>
+    <main class="main-content">
+      <div class="side-div"></div>
+      <form id="survey-form" class="form">
+        <label id="name-label" class="form__title required" for="name">Name</label>
+        <input type="text" id="name" class="form__input" placeholder="Enter your name" required />
+
+        <label id="emal-label" class="form__title required" for="email">Email</label>
+        <input type="email" id="email" class="form__input" placeholder="Enter your email" required />
+
+        <label id="number-label" class="form__title" for="age">Age</label>
+        <input type="number" id="number" class="form__input" min="10" max="99" placeholder="Enter your age" />
+
+        <label class="form__title" for="favcon">Which is your favorite game?</label>
+        <select id="dropdown" class="form__select">
+          <option>Select a game</option>
+          <option value="ms">Marvel's Spiderman</option>
+          <option value="gow">God of War</option>
+          <option value="rac">Ratchet and Clanck</option>
+          <option value="cb">Crash bandicoot</option>
+        </select>
+
+        <p class="form__title">Would you recommend Playstation to a friend?</p>
+        <div class="selection">
+          <div class="selection__item">
+            <label class="" for="yes">Yes</label>
+            <input type="radio" id="yes" class="yes" name="radio" value="yes" />
+          </div>
+
+          <div class="selection__item">
+            <label class="" for="No">No</label>
+            <input type="radio" id="No" class="No" name="radio" value="No" />
+          </div>
+
+          <div class="selection__item">
+            <label class="" for="maybe">Maybe</label>
+            <input type="radio" id="maybe" class="maybe" name="radio" value="maybe" />
+          </div>
+        </div>
+
+        <label class="form__title" for="console">Wich is your favorite console?</label>
+        <select class="form__select">
+          <option>Select a console</option>
+          <option value="ps1">PlayStation 1</option>
+          <option value="ps2">PlayStation 2</option>
+          <option value="ps3">PlayStation 3</option>
+          <option value="ps4">PlayStation 4</option>
+          <option value="ps5">PlayStation 5</option>
+        </select>
+
+        <fieldset class="form__fieldset">
+          <legend class="form__title">Which are your favorite genders?</legend>
+          <ul class="fieldset-ul">
+            <li class="fieldset-ul__li">
+              <label for="horror">horror</label>
+              <input type="checkbox" id="horror" class="" value="horror" />
+            </li>
+            <li class="fieldset-ul__li">
+              <label for="action">action</label>
+              <input type="checkbox" id="action" class="" value="action" />
+            </li>
+            <li class="fieldset-ul__li">
+              <label for="fantasy">fantasy</label>
+              <input type="checkbox" id="fantasy" class="" value="fantasy" />
+            </li>
+            <li class="fieldset-ul__li">
+              <label for="adventures">adventures</label>
+              <input type="checkbox" id="adventures" class="" value="adventures" />
+            </li>
+            <li class="fieldset-ul__li">
+              <label for="all">All the previous options</label>
+              <input type="checkbox" id="all" class="" value="all" />
+            </li>
+          </ul>
+        </fieldset>
+
+        <label class="form__title" for="textfield"
+          >Tell us a little experiencie with your favorite ps console</label
+        >
+        <textarea
+          id="textfield"
+          class="textfield"
+          maxlength="150"
+          placeholder="Write your story here"
+        ></textarea>
+        <button id="submit" class="form__button">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

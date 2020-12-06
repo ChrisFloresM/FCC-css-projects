@@ -1,0 +1,203 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+  --white: #fff;
+  --black: #000;
+}
+
+/*general styles*/
+body {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url('assets/main-bg.jpg');
+  background-size: cover;
+  color: var(--black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+/**header styles*/
+.head {
+  color: var(--white);
+  font-size: 1.5em;
+  margin-bottom: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.head__title,
+.head__description {
+  margin: 0;
+  padding: 15px;
+}
+
+/**main styles*/
+.main-content {
+  background-color: var(--white);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.521);
+  box-shadow: 0px 1px 3px 2px rgba(0, 0, 0, 0.521);
+  height: auto;
+}
+
+/*div styles*/
+.side-div {
+  width: 10%;
+  min-height: 1380px;
+  background-image: url('assets/side-pattern.jpg');
+}
+
+/*from styles*/
+.form {
+  padding: 5vmin;
+  font-size: 1.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.form__title,
+.form__fieldset {
+  margin-top: 50px;
+  margin-bottom: 15px;
+}
+
+.form__title:first-child {
+  margin-top: 0px;
+}
+.form__title {
+  font-size: 1.3em;
+}
+
+.form__input,
+.form__select,
+.textfield {
+  padding: 10px 5px;
+  border: 0;
+  border-bottom: 1px solid var(--black);
+}
+
+.form__input:focus,
+.form__select:focus,
+.textfield:focus {
+  outline: none;
+}
+
+.required::after {
+  content: '(required)';
+  font-size: 0.6em;
+  margin: 5px;
+}
+
+.textfield {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.form__fieldset {
+  -webkit-margin-start: 0px;
+  margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+  margin-inline-end: 0px;
+  border: 0;
+  -webkit-padding-before: 0em;
+  padding-block-start: 0em;
+  -webkit-padding-end: 0em;
+  padding-inline-end: 0em;
+  -webkit-padding-after: 0em;
+  padding-block-end: 0em;
+  -webkit-padding-start: 0em;
+  padding-inline-start: 0em;
+  min-inline-size: -webkit-min-content;
+  min-inline-size: -moz-min-content;
+  min-inline-size: min-content;
+  margin-bottom: 0;
+}
+
+.selection {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.fieldset-ul {
+  list-style: none;
+}
+
+.fieldset-ul__li {
+  margin-bottom: 10px;
+}
+
+.form__button {
+  margin-top: 50px;
+  border-radius: 30px;
+  border: 0;
+  padding: 15px;
+  color: var(--white);
+  background-color: var(--black);
+  -webkit-box-shadow: 0px 1px 3px 1px rgba(19, 19, 19, 0.5);
+  box-shadow: 0px 1px 3px 1px rgba(19, 19, 19, 0.5);
+  font-size: 1.5em;
+  font-weight: bold;
+  -webkit-transition-property: color background-color;
+  -o-transition-property: color background-color;
+  transition-property: color background-color;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+@media screen and (max-width: 630px) {
+  body {
+    font-size: 10px;
+  }
+
+  .side-div {
+    display: none;
+  }
+}
