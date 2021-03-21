@@ -1,0 +1,64 @@
+.main-content {
+  position: absolute;
+  background-color: var(--base-color-5);
+  top: 10rem;
+  right: 0;
+  width: 85%;
+  padding-bottom: 5rem;
+
+  &__section {
+    padding: 3rem;
+    padding-bottom: 0;
+  }
+
+  &__heading {
+    margin-bottom: 2rem;
+  }
+
+  &__text {
+    margin: 0 6rem;
+  }
+
+  &__paragraph,
+  &__item-text {
+    margin-bottom: 1rem;
+  }
+
+  &__paragraph--m-b-l {
+    margin-bottom: 0.5rem;
+  }
+
+  &__paragraph--span {
+    display: block;
+  }
+
+  &__list {
+    margin-left: 5rem;
+  }
+
+  &__list--second {
+    margin-left: 10rem;
+  }
+
+  &__code-box {
+    margin-left: 1rem;
+    background-color: var(--base-color-1);
+    padding: 2rem 4rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__code-box::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 2rem;
+    background-color: var(--base-color-4);
+    z-index: 10;
+  }
+}
