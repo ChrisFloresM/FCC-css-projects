@@ -7,6 +7,8 @@
   padding-top: 0;
   overflow: auto;
   background-color: var(--base-color-1);
+  display: flex;
+  flex-direction: column;
 
   &__list {
     list-style: none;
